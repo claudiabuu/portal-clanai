@@ -2,73 +2,104 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ClanAI - Vuelve a Ti</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bienvenidos a ClanAI</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom right, #EEE0C2, #B6D3C6);
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      font-family: 'Helvetica', sans-serif;
+      background-color: #EEE0C2; /* marfil cálido */
+      background-image: url('https://claudiabuu.github.io/portal-clanai/assets/logo.png'); /* Ajusta el path a tu logo */
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 40%;
+      color: #3E3E3E;
       text-align: center;
-    }
-    .marca-agua {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      opacity: 0.1;
-      font-size: 6rem;
-      font-weight: bold;
-      color: #C8945B;
-      pointer-events: none;
+      padding: 2rem;
     }
     h1 {
-      font-size: 2rem;
-      color: #C8945B;
+      color: #C8945B; /* caramelo claro */
+      font-size: 3rem;
       margin-bottom: 0.5rem;
     }
+    h2 {
+      color: #86C1AF; /* verde menta acuático */
+      font-size: 1.8rem;
+      font-style: italic;
+      margin-bottom: 2rem;
+    }
     p {
-      max-width: 600px;
-      margin: 0 1rem 2rem;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 1rem auto;
+      line-height: 1.6;
     }
     .botones {
       display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
       justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2rem;
     }
     .boton {
-      background-color: #86C1AF;
-      color: white;
-      padding: 1rem 1.5rem;
-      border: none;
-      border-radius: 1rem;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background 0.3s ease;
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 0.5rem;
+      background-color: #B6D3C6; /* verde espuma */
+      color: #fff;
+      text-decoration: none;
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
     }
     .boton:hover {
-      background-color: #5fa493;
+      transform: scale(1.05);
+    }
+    .boton img {
+      height: 24px;
     }
   </style>
 </head>
 <body>
-  <div class="marca-agua">ClanAI</div>
-  <h1>Bienvenida a ClanAI</h1>
-  <p>Un refugio digital para volver a ti, conectar con tu alma y crear un futuro más amable.</p>
+  <h1>Bienvenidos a ClanAI</h1>
+  <h2>"Donde tu mente despierta, tu corazón sana y tu visión se expande"</h2>
+
+  <p>Este no es solo un sitio web. Es un espacio vivo, creado con cuidado y propósito para acompañarte a descubrir, expandir y transformar lo que ya habita en ti.</p>
+
+  <p>Aquí creemos que cada persona merece un lugar seguro donde explorar su mente, conocerse mejor y diseñar una versión de sí misma más consciente, libre y poderosa. Por eso ClanAI combina técnicas de coaching transformacional, PNL, neurociencia emocional y herramientas de IA para guiarte, paso a paso, hacia lo que hoy sueñas ser.</p>
+
+  <p>Tu viaje comienza con tres niveles:</p>
+
+  <p><strong>🌟 Explorador</strong><br>
+  Una experiencia para abrir la puerta: preguntas poderosas, reflexiones y un pequeño entregable que se convertirá en tu primer mapa interior. Ideal para quienes quieren dar su primer paso hacia adentro, sin prisa pero sin pausa.</p>
+
+  <p><strong>👁️ Visionario</strong><br>
+  Un nivel intermedio para quienes desean profundizar: aquí tendrás un proceso más estructurado para encontrarte con tu yo futuro, clarificar lo que quieres y empezar a diseñar cómo llegar allí.</p>
+
+  <p><strong>🌿 Proceso Completo</strong><br>
+  Para almas comprometidas: un proceso de coaching completo de 8 sesiones, cuidadosamente diseñado para sostener tu transformación real. Te acompañaremos a identificar bloqueos, reprogramar creencias, crear un plan y dar seguimiento a cada avance.</p>
+
+  <p>Todo lo que encuentres aquí está pensado para ayudarte de verdad: sin promesas vacías, sin fórmulas mágicas. Solo ciencia, conciencia y un Clan que te recuerda que no tienes que caminar solo.</p>
+
   <div class="botones">
-    <button class="boton">✨ Iniciar ahora</button>
-    <button class="boton">🧠 Explorar herramientas</button>
-    <button class="boton">📩 Contacto</button>
+    <a href="#explorador" class="boton">
+      <img src="https://claudiabuu.github.io/portal-clanai/assets/lupa.png" alt="Explorador">
+      Explorador
+    </a>
+    <a href="#visionario" class="boton">
+      <img src="https://claudiabuu.github.io/portal-clanai/assets/ojito.png" alt="Visionario">
+      Visionario
+    </a>
+    <a href="#proceso" class="boton">
+      <img src="https://claudiabuu.github.io/portal-clanai/assets/manito.png" alt="Proceso Completo">
+      Proceso Completo
+    </a>
+    <a href="#biblioteca" class="boton" style="background-color: #C8945B;">
+      📚 Biblioteca
+    </a>
   </div>
 </body>
 </html>
