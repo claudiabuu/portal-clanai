@@ -11,138 +11,137 @@
       padding: 0;
       background-color: #EEE0C2;
       color: #333;
-      background-image: url('logo.png');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 300px;
+      background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); /* imagen liviana y elegante */
+      background-repeat: repeat;
+      background-size: cover;
       background-attachment: fixed;
       text-align: justify;
     }
+
     .container {
       max-width: 900px;
       margin: auto;
       padding: 2rem;
-      background-color: rgba(255, 255, 255, 0.85);
+      background-color: rgba(255, 255, 255, 0.9);
       border-radius: 1rem;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
+
     h1 {
       text-align: center;
       color: #C8945B;
       font-size: 3rem;
       margin-bottom: 0.5rem;
     }
+
     h2 {
       color: #86C1AF;
-      display: inline-block;
-      margin: 0 10px;
+      margin: 0.5rem 0;
     }
+
     p {
       font-size: 1.1rem;
       line-height: 1.6;
     }
-    .linea {
-      width: 30px;
-      height: 2px;
-      background-color: #A06A41;
-      display: inline-block;
-      vertical-align: middle;
-    }
+
     .niveles {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-  gap: 1rem;
-}
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      margin-top: 2rem;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
 
-.nivel {
-  text-align: center;
-  width: 250px;
-  padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 1rem;
-}
+    .nivel {
+      flex: 1;
+      text-align: center;
+      min-width: 250px;
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 1rem;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
 
-.nivel img {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 0.5rem;
-}
+    .nivel img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 0.5rem;
+    }
 
-.button {
-  display: inline-block;
-  margin-top: 0.8rem;
-  padding: 0.6rem 1.2rem;
-  background-color: #86C1AF;
-  color: white;
-  border: none;
-  border-radius: 2rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  text-decoration: none;
-  font-weight: bold;
-  transition: transform 0.2s;
-}
+    .button {
+      display: inline-block;
+      margin-top: 0.8rem;
+      padding: 0.6rem 1.2rem;
+      background-color: #86C1AF;
+      color: white;
+      border: none;
+      border-radius: 2rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.2s ease;
+    }
 
-.boton:hover {
-  transform: scale(1.05);
-}
+    .button:hover {
+      transform: scale(1.05);
+    }
 
-.linea-vertical {
-  width: 2px;
-  height: 150px;
-  background-color: #A06A41;
-}
+    .linea-vertical {
+      display: none; /* ocultamos en móvil, y no es necesaria ya */
+    }
+
+    .biblioteca {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .niveles {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Bienvenidos a ClanAI</h1>
     <p style="text-align: center;"><em>No es magia ni promesas vacías: es neurociencia, metodología y cuidado real.</em></p>
+
     <p>
       Este no es solo un sitio web. Es un espacio vivo, creado con cuidado y propósito para acompañarte a descubrir, expandir y transformar lo que ya habita en ti.
       Aquí creemos que cada persona merece un lugar seguro donde explorar su mente, conocerse mejor y diseñar una versión de sí misma más consciente, libre y poderosa. Por eso ClanAI combina técnicas de coaching transformacional, PNL, neurociencia emocional y herramientas de IA para guiarte, paso a paso, hacia lo que hoy sueñas ser.
     </p>
-    <p>
-      Tu viaje comienza con tres niveles:
-    </p>
-    <p>
-      🌟 <strong>Explorador</strong><br>
-      Una experiencia para abrir la puerta: preguntas poderosas, reflexiones y un pequeño entregable que se convertirá en tu primer mapa interior. Ideal para quienes quieren dar su primer paso hacia adentro, sin prisa pero sin pausa.
-    </p>
-    <p>
-      👁️ <strong>Visionario</strong><br>
-      Un nivel intermedio para quienes desean profundizar: aquí tendrás un proceso más estructurado para encontrarte con tu yo futuro, clarificar lo que quieres y empezar a diseñar cómo llegar allí.
-    </p>
-    <p>
-      🌿 <strong>Proceso Completo</strong><br>
-      Para almas comprometidas: un proceso de coaching completo de 8 sesiones, cuidadosamente diseñado para sostener tu transformación real. Te acompañaremos a identificar bloqueos, reprogramar creencias, crear un plan y dar seguimiento a cada avance.
-    </p>
-    <p>
-      Todo lo que encuentres aquí está pensado para ayudarte de verdad: sin promesas vacías, sin fórmulas mágicas. Solo ciencia, conciencia y un Clan que te recuerda que no tienes que caminar solo.
-    </p>
+
+    <p>Tu viaje comienza con tres niveles:</p>
+
+    <p>🌟 <strong>Explorador</strong><br>
+    Una experiencia para abrir la puerta: preguntas poderosas, reflexiones y un pequeño entregable que se convertirá en tu primer mapa interior. Ideal para quienes quieren dar su primer paso hacia adentro, sin prisa pero sin pausa.</p>
+
+    <p>👁️ <strong>Visionario</strong><br>
+    Un nivel intermedio para quienes desean profundizar: aquí tendrás un proceso más estructurado para encontrarte con tu yo futuro, clarificar lo que quieres y empezar a diseñar cómo llegar allí.</p>
+
+    <p>🌿 <strong>Proceso Completo</strong><br>
+    Para almas comprometidas: un proceso de coaching completo de 8 sesiones, cuidadosamente diseñado para sostener tu transformación real. Te acompañaremos a identificar bloqueos, reprogramar creencias, crear un plan y dar seguimiento a cada avance.</p>
+
+    <p>Todo lo que encuentres aquí está pensado para ayudarte de verdad: sin promesas vacías, sin fórmulas mágicas. Solo ciencia, conciencia y un Clan que te recuerda que no tienes que caminar solo.</p>
 
     <div class="niveles">
       <div class="nivel">
         <img src="lupa.png" alt="Explorador">
-       <!-- <div class="linea"></div> -->
         <h2>EXPLORADOR</h2>
-        <!--<div class="linea"></div> lineas -->
         <p>Descubre nuevos caminos.</p>
         <a href="https://claudiabuu.github.io/uiClanAi/" class="button">Comienza</a>
       </div>
 
-      <div class="linea-vertical"></div>
-      
       <div class="nivel">
         <img src="ojo.png" alt="Visionario">
-        <!--<div class="linea"></div> -->
         <h2>VISIONARIO</h2>
-        <!--<div class="linea"></div> lineas mal cbustamante-->
         <p>Conecta con tu yo futuro.</p>
         <a class="button" href="#">Explorar</a>
       </div>
-     <div class="linea-vertical"></div>
+
       <div class="nivel">
         <img src="manito.png" alt="Proceso Completo">
         <h2>PROCESO COMPLETO</h2>
@@ -157,5 +156,6 @@
   </div>
 </body>
 </html>
+
 
 
