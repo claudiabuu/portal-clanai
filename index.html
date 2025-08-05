@@ -73,12 +73,23 @@
 .nivel img {
   width: 60px;
   height: 60px;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
 }
 
-.button {
+.nivel h3 {
+  margin: 0.3rem 0 0.5rem;
+  color: #C8945B;
+}
+
+.frase {
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #666;
+  min-height: 40px; /* para alinear aunque el texto cambie */
+}
+
+.boton {
   display: inline-block;
-  margin-top: 0.8rem;
   padding: 0.6rem 1.2rem;
   background-color: #86C1AF;
   color: white;
@@ -87,9 +98,9 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   text-decoration: none;
   font-weight: bold;
-  transition: transform 0.2s;
+  transition: transform 0.2s ease;
+  margin-top: auto; /* empuja el botón hacia abajo */
 }
-
 .boton:hover {
   transform: scale(1.05);
 }
@@ -163,6 +174,7 @@
   </div>
 </body>
 </html>
+
 
 
 
